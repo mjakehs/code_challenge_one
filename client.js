@@ -1,13 +1,22 @@
 console.log('js');
 
-$( document ).ready( readyNow );
+$(document).ready(readyNow);
 
-function readyNow(){
+function readyNow() {
     console.log('jq');
     $('#buttonHere').append('<button id="generatorButton">Generate</button>');
     $('#buttonHere').on('click', 'button', makeDiv);
 }
-
-function makeDiv(){
+let timesButtonPressed = 0;
+function makeDiv() {
     console.log('in makeDiv');
+    //increase the counter
+    timesButtonPressed++
+    //append a div with a p tag in it 
+    $('#moreDivsHere').append(`
+        <div>
+            <p>` + timesButtonPressed + `</p>
+        </div>
+
+`);
 }
