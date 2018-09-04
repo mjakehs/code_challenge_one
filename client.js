@@ -16,7 +16,8 @@ function makeDiv() {
     $('#moreDivsHere').append(`
         <div>
             <p>` + timesButtonPressed + `</p>
+            <button class="swapButton">Swap</button>
+            <button class="deleteButton">Delete</button>
         </div>
-
 `);
 }
