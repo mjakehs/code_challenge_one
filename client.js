@@ -7,6 +7,7 @@ function readyNow() {
     $('#buttonHere').append('<button id="generatorButton">Generate</button>');
     $(document).on('click', '#generatorButton', makeDiv);
     $(document).on('click', '.swapButton', bgToggle);
+    $(document).on('click', '.deleteButton', deleteParent);
 }
 let timesButtonPressed = 0;
 function makeDiv() {
@@ -25,4 +26,8 @@ function makeDiv() {
 
 function bgToggle(){
     $(this).parent().toggleClass('bgYellow');
+}
+
+function deleteParent(){
+    $(this).parent().remove();
 }
