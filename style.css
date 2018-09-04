@@ -2,3 +2,11 @@ body {
     background-color: black;
     color: white;
 }
+
+.generatedDiv {
+    background-color: red;
+}
+
+.bgYellow {
+    background-color: yellow;
+}
